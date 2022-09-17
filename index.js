@@ -15,8 +15,8 @@ let transport = nodemailer.createTransport({
     rejectUnauthorized: false,
   },
   auth: {
-    user: "himanshu991139@gmail.com",
-    pass: "h@9911392743",
+    user: "***********",
+    pass: "*********",
   },
 });
 
@@ -27,8 +27,8 @@ app.post("/sendmail", (req, res) => {
   // console.log(req)
 
   const message = {
-    from: `himanshu991139@gmail.com`, // Sender address
-    to: "himanshu991139@gmail.com", // List of recipients
+    from: `*****`, // Sender address
+    to: "********", // List of recipients
     subject: `${req.body.subject}`, // Subject line
     html: `<b>Email:- ${req.body.email}</b><br>${req.body.message}`, // html body
   };
